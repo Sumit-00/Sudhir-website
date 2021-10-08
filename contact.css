@@ -1,0 +1,13 @@
+.hero-text {
+  max-width: 40%;
+  width: 37%;
+}
+.about-connect {
+  margin-top: 8rem;
+}
+.map-container {
+  height: 100%;
+}
+#map {
+  height: 50%;
+}

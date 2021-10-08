@@ -1,0 +1,96 @@
+html {
+  font-size: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.mic,
+.smile {
+  padding: 0.7rem;
+}
+.mic {
+  left: 0;
+}
+.smile {
+  right: -5%;
+}
+.or5 {
+  top: 3%;
+}
+.quality-cards {
+  display: grid;
+}
+.quality-heading h1 {
+  max-width: 100%;
+}
+.package-heading h1 {
+  max-width: 90%;
+}
+.package-cards {
+  display: grid;
+}
+.package-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.package-info a {
+  justify-self: flex-end;
+}
+.package-info p {
+  max-width: 100%;
+}
+.community-info h1 {
+  max-width: 90%;
+}
+.community {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.about-info {
+  max-width: 100%;
+}
+.blogs-card {
+  display: grid;
+}
+.coaching-info {
+  margin-top: 3rem;
+}
+.newsletter form {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+}
+.about-section {
+  grid-template-columns: 1fr;
+  padding-top: 2rem;
+}
+.blogs-card card {
+  margin-bottom: 3rem;
+}
+.blogs-heading-1 {
+  display: grid;
+}
+.blogs-heading-1 h1 {
+  font-size: 2rem;
+  width: 80%;
+  max-width: 100%;
+}
+.blogs-heading-1 a {
+  justify-self: flex-end;
+  margin-top: 2rem;
+}
+.footer {
+  display: grid;
+}
+.footer-links {
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.quality-card {
+  text-align: center;
+}

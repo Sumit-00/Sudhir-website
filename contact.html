@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+      integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <section class="navigation">
+      <div class="nav-container navbar-container">
+        <div class="brand">
+          <a href="#!">
+            <img src="images/Logo.png" alt="Logo" />
+          </a>
+        </div>
+        <nav>
+          <div class="nav-mobile">
+            <a id="navbar-toggle" href="#!"><span></span></a>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="about.html" target="_blank">About Us</a>
+            </li>
+            <li>
+              <a href="#!">Services</a>
+            </li>
+            <li>
+              <a href="#!">Courses</a>
+            </li>
+
+            <li>
+              <a class="primary-btn" href="#!">Contact Me</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="hero-section container">
+        <div class="hero-text">
+          <h1>Contact Us, We’d Love to Hear From You</h1>
+          <a href="#" class="primary-btn">Join Now</a>
+        </div>
+        <div class="hero-image">
+             <img src="images/Ornament.png" alt="image" />
+          <img class="mic" src="images/mic.png" alt="mic" />
+          <img src="images/smile.png" alt="smile" class="smile" />
+          <img class="ornament or1" src="images/Ornament1.png" alt="image1" />
+          <img class="ornament or2" src="images/Ornament2.png" alt="image1" />
+          <img class="ornament or3" src="images/Ornament3.png" alt="image1" />
+          <img class="ornament or4" src="images/Ornament1.png" alt="image1" />
+          <img class="ornament or5" src="images/Ornament2.png" alt="image1" />
+          <img class="ornament or6" src="images/Ornament3.png" alt="image1" />
+          <img src="images/hero-image.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+    <!-- End of Navbar and Hero Page -->
+    <!-- Connect Section -->
+    <section class="about-connect container">
+        <div class="connect-info">
+            <div class="para">Get Connect</div>
+            <h1>Contact me to arrange your consultation and coaching</h1>
+            <p>If you are looking for someone with the experience to transform your life, then you have found the right person.</p>
+            <div class="connect-icons">
+                <div class="call">
+                    <img src="images/phone.png" alt="phone">
+                    <p>(+91) 959-927-1975</p>
+                </div>
+                <div class="message">
+                    <img src="images/icon.png" alt="message">
+                    <p>hello@sudirrajputlivecoach.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="connect-forms">
+            <form>
+                <div class="name-email">
+                    <div class="name-form">
+                        <label for="fullName">Full Name</label><br/>
+                        <input type="text" id="fname" name="fname" placeholder="Your Full Name"><br>
+                    </div>
+                    <div class="email-form">
+                        <label for="email">Email Address</label><br/>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address"><br>
+                    </div>
+                </div>
+                <label for="Subject">Subject</label><br/>
+                <input type="text" id="subject" name="subject" placeholder="Subject"><br>
+                <label for="Message">Message</label><br/>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" value="Get Access Books" class="primary-btn">
+
+            </form>
+        </div>
+        </div>
+    </section>
+    <!-- End of Connect Section -->
+    <!-- map -->
+    <section class="map-container">
+        <div id="map" class="map"></div>
+    </section>
+    <!-- End of map -->
+    <!-- Footer section -->
+    <section class="footer container">
+      <div class="footer-logo">
+        <img src="images/Logo.png" alt="logo" />
+        <p>
+          Our expertise includes science-based personal development, health &
+          fitness
+        </p>
+      </div>
+      <div class="footer-links">
+        <div class="links services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Coaching</a></li>
+            <li><a href="#">Consulting</a></li>
+            <li><a href="#">Self Development</a></li>
+          </ul>
+        </div>
+        <div class="links Company">
+          <h4>Comapny</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="links services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Code of Conduct</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End of Footer section -->
+    <!-- Copyright -->
+    <div class="copyright container">
+      <p>@2021 Sudhir. All rights reserved.</p>
+    </div>
+    <!-- End of Copyright -->
+    <script
+      src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+      integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+      crossorigin=""
+    ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
