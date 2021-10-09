@@ -1,9 +1,36 @@
 html {
   font-size: 12px;
 }
+body {
+  overflow-x: hidden;
+}
 
 img {
   max-width: 100%;
+}
+.brand img {
+  margin-left: 2rem;
+  max-width: 25%;
+}
+nav ul li a {
+  background-color: black;
+}
+nav ul li a:last-of-type {
+  border-radius: 0;
+  background-color: black;
+  padding: 15px;
+}
+nav ul li a,
+nav ul li a:visited {
+  color: white;
+}
+/* .primary-btn {
+  border-radius: 0;
+  background-color: black;
+  padding: 15px;
+} */
+.navigation ul li a {
+  color: white;
 }
 .hero-section {
   display: grid;
@@ -91,8 +118,25 @@ img {
   gap: 3rem;
   margin-top: 2rem;
 }
-.quality-card {
-  text-align: center;
+.carousel__content img {
+  width: 100%;
+}
+.carousel__content {
+  display: grid;
+}
+.testimonials h1 {
+  width: 66%;
+}
+.carousel__button--left {
+  top: -9%;
+  left: 254px;
+}
+.carousel__button--right {
+  top: -9%;
+  right: 5px;
+}
+.carousel {
+  height: 59rem;
 }
 @media only screen and (max-width: 376px) {
   html {
@@ -102,5 +146,8 @@ img {
 @media only screen and (max-width: 321px) {
   html {
     font-size: 9px;
+  }
+  .carousel__button--left {
+    left: 192px;
   }
 }

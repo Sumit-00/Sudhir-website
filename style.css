@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  overflow-x: hidden;
 }
 :root {
   --primary-color: #f36326;
@@ -10,6 +14,9 @@
   --heading1: 4rem;
   --heading2: 2.5rem;
   --heading3: 2rem;
+}
+body {
+  overflow-x: hidden;
 }
 .primary-btn {
   padding: 0.5rem 0.7rem;
@@ -93,7 +100,9 @@
   /* z-index: -1; */
   transform: rotate(20deg);
 }
-
+.navigation ul li a.active-page {
+  color: #f36326;
+}
 @media only screen and (min-width: 800px) {
   .nav-container {
     display: flex;
@@ -170,7 +179,7 @@ nav ul li ul li a {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 0;
+  top: 3%;
   right: 0;
   background: transparent;
   height: 55px;
@@ -408,6 +417,7 @@ nav ul li ul li a {
   margin-bottom: 8rem;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
 }
 .image {
   justify-self: center;
@@ -504,8 +514,100 @@ nav ul li ul li a {
 
 /* End of Coaching */
 /* Testimonials Slider  */
-.testimonials {
-  margin-bottom: 8rem;
+.carousel {
+  position: relative;
+  height: 36rem;
+  margin: 0 auto;
+}
+.carousel__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.carousel__track {
+  position: relative;
+  height: 100%;
+  list-style: none;
+  transition: transform 250ms ease-in;
+}
+.carousel__track-container {
+  position: relative;
+  height: 100%;
+}
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  background: #f36326;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.carousel__button img {
+  filter: invert(1);
+}
+.carousel__slide {
+  height: 100%;
+}
+.carousel__button--left {
+  left: -75px;
+  cursor: pointer;
+}
+.carousel__button--right {
+  right: -40px;
+}
+.carousel__button img {
+  width: 15px;
+}
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel__indicator {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  width: 15px;
+  height: 15px;
+  border: 0;
+  margin: 0 12px;
+}
+.carousel__indicator.current-slide {
+  background: var(--primary-color);
+}
+.is-hidden {
+  display: none;
+}
+.carousel-text h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.carousel-text h4,
+.carousel-text p {
+  font-size: 1.5rem;
+}
+.carousel-text p {
+  color: #9a9ab0;
+  margin-top: 1rem;
+}
+.carousel-text h3 {
+  color: #515151;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.testimonials h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  width: 40%;
 }
 /* ENd of  Slider  */
 
@@ -514,15 +616,15 @@ nav ul li ul li a {
   display: grid;
   place-items: center;
   margin-bottom: 8rem;
+  margin-top: 8rem;
 }
 .newsletter h1 {
   font-size: var(--heading2);
 }
 .newsletter form {
   margin-top: 3rem;
-
-  width: 40%;
-  max-width: 40%;
+  width: 60%;
+  max-width: 100%;
 
   text-align: center;
 }
@@ -580,3 +682,103 @@ nav ul li ul li a {
   color: #515151;
 }
 /* End of Footer */
+
+@media screen and (max-width: 1214px) {
+  .coaching-info h1 {
+    max-width: 90%;
+  }
+  .community-info h1 {
+    max-width: 90%;
+  }
+  .quality-heading h1 {
+    max-width: 40%;
+  }
+  .hero-text h1 {
+    font-size: 2.4rem;
+  }
+  .life-text,
+  .live-text {
+    font-size: 3.4rem;
+  }
+  .hero-image img:last-of-type {
+    max-width: 100%;
+  }
+  .smile,
+  .mic {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 1214px) {
+  html {
+    font-size: 14px;
+  }
+  .carousel-text h3 {
+    font-size: 1.5rem;
+  }
+  .community .image img {
+    max-width: 100%;
+  }
+  .carousel__content img {
+    width: 50%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 955px) {
+  html {
+    font-size: 13px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-links {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  html {
+    font-size: 12px;
+  }
+  .quality-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 799px) {
+  html {
+    font-size: 11px;
+  }
+  .testimonials h1 {
+    width: 50%;
+  }
+  .community-info h1 {
+    font-size: 2rem;
+  }
+  .community-info p:first-of-type {
+    margin: 1rem 0;
+  }
+  .community-info p {
+    font-size: 0.9rem;
+  }
+  .blogs-heading-1 h1 {
+    font-size: 2rem;
+    width: 60%;
+    max-width: 100%;
+  }
+  .package-heading h1 {
+    font-size: 2rem;
+    max-width: 23%;
+  }
+  .package-heading {
+    margin-bottom: 1rem;
+  }
+  .package-info p {
+    max-width: 44%;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .about-info p {
+    font-size: 0.9rem;
+  }
+}

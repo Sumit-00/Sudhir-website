@@ -36,13 +36,13 @@
           </div>
           <ul class="nav-list">
             <li>
-              <a href="#!">Home</a>
+              <a class="active-page" href="#!">Home</a>
             </li>
             <li>
               <a href="./aboutPage/about.html" target="_blank">About Us</a>
             </li>
             <li>
-              <a href="#!">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
               <a href="#!">Courses</a>
@@ -152,7 +152,7 @@
     </section>
     <!-- End of Qualities Page -->
     <!-- Packages -->
-    <section class="packages container">
+    <section id="services" class="packages container">
       <div class="package-heading">
         <p class="para">Best Services</p>
         <h1>Courses on Life Coaching</h1>
@@ -285,7 +285,7 @@
         </div>
 
         <div class="hero-image">
-          <img class="mic" src="images/" alt="mic" />
+          <img class="mic" src="images/mic.svg" alt="mic" />
           <img src="images/smile.png" alt="smile" class="smile" />
           <img class="ornament or1" src="images/Ornament1.png" alt="image1" />
           <img class="ornament or2" src="images/Ornament2.png" alt="image1" />
@@ -325,14 +325,84 @@
     <!-- End of Coaching -->
     <!-- Testimonials -->
 
-    <section class="testimonials container">
-      <div class="testi-heading">
-        <p class="para">Testimonials</p>
-        <div class="testi-heading-1">
-          <h1>What our client says about our Services</h1>
-        </div>
+    <div class="testimonials container">
+      <p class="para">Testimonials</p>
+      <h1>What our client says about our Services</h1>
+    </div>
+
+    <div class="carousel container">
+      <button class="carousel__button carousel__button--left is-hidden">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNjcgMGwyLjgzIDIuODI5LTkuMzM5IDkuMTc1IDkuMzM5IDkuMTY3LTIuODMgMi44MjktMTIuMTctMTEuOTk2eiIvPjwvc3ZnPg=="
+        />
+      </button>
+
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <div class="carousel__content">
+              <img src="images/female.png" alt="image" />
+              <div class="carousel-text">
+                <h3>
+                  "I gained weight post delivery and tried many things to reduce
+                  my weight but all vain. After joining this program I lost 28
+                  kg in six months. Now I am enjoying my healthy life with my
+                  entire family."
+                </h3>
+                <h4>Babita</h4>
+                <p>Housewife</p>
+              </div>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="carousel__content">
+              <div class="carousel__content">
+                <img src="images/female.png" alt="image" />
+                <div class="carousel-text">
+                  <h3>
+                    "I gained weight post delivery and tried many things to
+                    reduce my weight but all vain. After joining this program I
+                    lost 28 kg in six months. Now I am enjoying my healthy life
+                    with my entire family."
+                  </h3>
+                  <h4>Babita</h4>
+                  <p>Housewife</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="carousel__slide">
+            <div class="carousel__content">
+              <div class="carousel__content">
+                <img src="images/female.png" alt="image" />
+                <div class="carousel-text">
+                  <h3>
+                    "I gained weight post delivery and tried many things to
+                    reduce my weight but all vain. After joining this program I
+                    lost 28 kg in six months. Now I am enjoying my healthy life
+                    with my entire family."
+                  </h3>
+                  <h4>Babita</h4>
+                  <p>Housewife</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </section>
+
+      <button class="carousel__button carousel__button--right">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNSAzbDMuMDU3LTMgMTEuOTQzIDEyLTExLjk0MyAxMi0zLjA1Ny0zIDktOXoiLz48L3N2Zz4="
+        />
+      </button>
+
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
 
     <!-- End of Testimonials -->
     <!-- Newsletter -->
