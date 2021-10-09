@@ -8,6 +8,26 @@ html {
 img {
   max-width: 100%;
 }
+.brand img {
+  margin-left: 2rem;
+  max-width: 25%;
+}
+nav ul li a {
+  background-color: black;
+}
+nav ul li a:last-of-type {
+  border-radius: 0;
+  background-color: black;
+  padding: 15px;
+}
+nav ul li a,
+nav ul li a:visited {
+  color: white;
+}
+
+.navigation ul li a {
+  color: white;
+}
 .about-community {
   grid-template-columns: 1fr;
 }
@@ -39,6 +59,7 @@ img {
 }
 .about-footer {
   display: grid;
+  grid-template-columns: 1fr;
 }
 .footer-links {
   gap: 2rem;

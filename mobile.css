@@ -24,11 +24,7 @@ nav ul li a,
 nav ul li a:visited {
   color: white;
 }
-/* .primary-btn {
-  border-radius: 0;
-  background-color: black;
-  padding: 15px;
-} */
+
 .navigation ul li a {
   color: white;
 }
@@ -113,6 +109,7 @@ nav ul li a:visited {
 }
 .footer {
   display: grid;
+  grid-template-columns: 1fr;
 }
 .footer-links {
   gap: 3rem;
