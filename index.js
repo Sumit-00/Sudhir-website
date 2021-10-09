@@ -57,18 +57,18 @@ counters.forEach((counter) => {
   updateCounter();
 });
 
-// Map Code
-let mapOptions = {
-  center: [18.979, 72.949],
-  zoom: 10,
-};
+// // Map Code
+// let mapOptions = {
+//   center: [18.979, 72.949],
+//   zoom: 10,
+// };
 
-let map = new L.map("map", mapOptions);
+// let map = new L.map("map", mapOptions);
 
-let layer = new L.TileLayer(
-  "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-);
-map.addLayer(layer);
+// let layer = new L.TileLayer(
+//   "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+// );
+// map.addLayer(layer);
 
-let marker = new L.Marker([51.958, 9.141]);
-marker.addTo(map);
+// let marker = new L.Marker([51.958, 9.141]);
+// marker.addTo(map);

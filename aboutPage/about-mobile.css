@@ -1,0 +1,63 @@
+html {
+  font-size: 12px;
+}
+
+.hero-section {
+  grid-template-columns: 1fr;
+}
+img {
+  max-width: 100%;
+}
+.about-community {
+  grid-template-columns: 1fr;
+}
+.about-community-info {
+  margin-left: 0;
+}
+.about-community-info h1 {
+  margin-top: 2.5rem;
+}
+.smile,
+.mic {
+  padding: 0.7rem;
+}
+.smile {
+  right: -6%;
+  bottom: 32%;
+}
+.community {
+  grid-template-columns: 1fr;
+}
+.community .community-info {
+  margin-bottom: 3rem;
+}
+.about-connect {
+  grid-template-columns: 1fr;
+}
+.connect-info {
+  margin-bottom: 3rem;
+}
+.about-footer {
+  display: grid;
+}
+.footer-links {
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.community-info p {
+  max-width: 100%;
+}
+.connect-info {
+  max-width: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  html {
+    font-size: 9px;
+  }
+}

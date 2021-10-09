@@ -69,7 +69,7 @@ img {
   grid-template-columns: 1fr;
   padding-top: 2rem;
 }
-.blogs-card card {
+.blogs .blogs-card .card:first-of-type {
   margin-bottom: 3rem;
 }
 .blogs-heading-1 {
@@ -93,4 +93,14 @@ img {
 }
 .quality-card {
   text-align: center;
+}
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  html {
+    font-size: 9px;
+  }
 }

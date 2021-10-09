@@ -1,0 +1,57 @@
+.about-connect {
+  margin-top: 8rem;
+}
+.map-container {
+  height: 100%;
+}
+#map {
+  height: 50%;
+}
+
+@media screen and (max-width: 426px) {
+  html {
+    font-size: 11px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+  .hero-text {
+    max-width: 100%;
+  }
+  .about-connect {
+    grid-template-columns: 1fr;
+  }
+  .connect-info h1 {
+    font-size: 2.3rem;
+  }
+  .connect-info {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .name-email {
+    grid-template-columns: 1fr;
+  }
+  .email-form input[type="email"] {
+    width: 95%;
+  }
+  .footer {
+    display: grid;
+  }
+  .footer-links {
+    margin-top: 3rem;
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 321px) {
+  html {
+    font-size: 9px;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

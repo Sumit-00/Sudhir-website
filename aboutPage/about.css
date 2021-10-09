@@ -11,9 +11,18 @@
   --heading2: 2.5rem;
   --heading3: 2rem;
 }
+.hero-text {
+  max-width: 69%;
+}
 .about-community {
   margin-top: 8rem;
   margin-bottom: 8rem;
+}
+.hero-image img:last-of-type {
+  position: relative;
+}
+.smile {
+  right: -4%;
 }
 .about-community-info {
   display: flex;
