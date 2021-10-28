@@ -2,10 +2,10 @@
   margin-top: 8rem;
 }
 .map-container {
-  height: 100%;
-}
-#map {
-  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 2rem;
 }
 
 @media screen and (max-width: 426px) {

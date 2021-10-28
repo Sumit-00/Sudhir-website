@@ -457,8 +457,11 @@ nav ul li ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2rem;
 }
-
+.blogs-card .card img {
+  max-width: 100%;
+}
 .blog-card-info p {
   color: #9a9ab0;
   margin: 1rem 0;
@@ -475,6 +478,7 @@ nav ul li ul li a {
   letter-spacing: 0.5px;
   line-height: 1.5;
 }
+
 /* End of Blogs */
 /* About  */
 .about {
@@ -588,7 +592,7 @@ nav ul li ul li a {
   display: none;
 }
 .carousel-text h3 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
 }
 .carousel-text h4,
@@ -608,6 +612,10 @@ nav ul li ul li a {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   width: 40%;
+}
+.carousel__content img {
+  width: 500px;
+  max-width: 100%;
 }
 /* ENd of  Slider  */
 

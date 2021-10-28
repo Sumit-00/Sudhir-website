@@ -88,7 +88,7 @@ console.log(slideWidth);
 let c = 0;
 slides.forEach((slide, index) => {
   if (index > 0) {
-    c = index * 1.5;
+    c = index * 1.7;
     slide.style.left = slideWidth * c + "px";
   } else {
     slide.style.left = slideWidth * index + "px";
